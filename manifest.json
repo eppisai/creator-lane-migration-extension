@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "Creator Lane Migration Assistant",
+  "version": "0.3.0",
+  "description": "One-click migration from SuperProfile (and other comment-to-DM tools) into Creator Lane.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.creatorlanehq.com/*",
+    "https://creatorlanehq.com/*",
+    "https://*.superprofile.bio/*",
+    "https://superprofile.bio/*"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Creator Lane Migration",
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/superprofile.js-eUDVCQFB.js"
+      ],
+      "matches": [
+        "https://*.superprofile.bio/*",
+        "https://superprofile.bio/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://*.creatorlanehq.com/*",
+      "https://creatorlanehq.com/*",
+      "http://localhost:3000/*"
+    ]
+  },
+  "icons": {
+    "16": "src/assets/icon-16.png",
+    "48": "src/assets/icon-48.png",
+    "128": "src/assets/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://*.superprofile.bio/*",
+        "https://superprofile.bio/*"
+      ],
+      "resources": [
+        "assets/superprofile.js-eUDVCQFB.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
