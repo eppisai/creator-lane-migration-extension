@@ -32,7 +32,7 @@ cd creator-lane-migration-extension
 2. Go to **Dashboard → Migrate** (or visit [creatorlanehq.com/dashboard/migrate](https://creatorlanehq.com/dashboard/migrate)).
 3. If Creator Lane says "Install the migration extension", scroll down to the small **"Dev: loaded the unpacked extension?"** input.
 4. Paste the extension ID you copied. Click **Connect**.
-5. You should see **✓ Extension v0.3.0 ready**.
+5. You should see **✓ Extension v0.4.0 ready**.
 
 ---
 
@@ -57,7 +57,7 @@ cd creator-lane-migration-extension
 - The scraped automation list is POSTed to Creator Lane's API using your existing Creator Lane login.
 - Imported automations are matched to your Instagram posts using the **caption text** that SuperProfile shows — not page screenshots.
 
-Source code mirrors the extension folder of [insta_link_please](https://github.com/...) (Creator Lane's monorepo). This repo just contains the pre-built distribution.
+Source code mirrors the extension folder of [insta_link_please](https://github.com/eppisai/insta_link_please) (Creator Lane's monorepo). This repo just contains the pre-built distribution.
 
 ---
 
@@ -80,4 +80,4 @@ Source code mirrors the extension folder of [insta_link_please](https://github.c
 - Scraped data is sent only to `creatorlanehq.com`'s API, using your existing Creator Lane authentication.
 - We log the imported payload so we can debug issues — visible to you under **Dashboard → Migrations**.
 
-Source code: see the [insta_link_please](https://github.com/...) repo, `extension/` directory.
+Source code: see the [insta_link_please](https://github.com/eppisai/insta_link_please) repo, `extension/` directory.
