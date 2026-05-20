@@ -13,7 +13,7 @@ This is a pre-built Chrome extension — no `npm` or `node` required. Just clone
 ### 1. Clone this repo
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/eppisai/creator-lane-migration-extension.git
 cd creator-lane-migration-extension
 ```
 
@@ -40,7 +40,7 @@ cd creator-lane-migration-extension
 
 1. On the Migrate page, **Migrating from** dropdown should already say **SuperProfile**.
 2. Click **Start migration**.
-3. A new tab opens at `superprofile.bio`. You'll see a purple/green banner across the top: *"Creator Lane is controlling this tab"*, and a visible cursor moving around.
+3. A new tab opens at `superprofile.bio`. You'll see a dark banner across the top with the Creator Lane brand mark and *"is now migrating your automations"* in serif italic, plus a visible cursor moving around.
 4. **If you're not logged into SuperProfile**, log in. The extension waits and continues automatically.
 5. The cursor opens each automation, reads the keyword + DM + caption, and closes it. You can watch the whole thing happen.
 6. When done, the tab closes itself. Creator Lane shows: `✓ N campaigns imported (paused)`.
