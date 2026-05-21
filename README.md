@@ -32,7 +32,7 @@ cd creator-lane-migration-extension
 2. Go to **Dashboard → Migrate** (or visit [creatorlanehq.com/dashboard/migrate](https://creatorlanehq.com/dashboard/migrate)).
 3. If Creator Lane says "Install the migration extension", scroll down to the small **"Dev: loaded the unpacked extension?"** input.
 4. Paste the extension ID you copied. Click **Connect**.
-5. You should see **✓ Extension v0.4.0 ready**.
+5. You should see **✓ Extension v0.5.0 ready**.
 
 ---
 
