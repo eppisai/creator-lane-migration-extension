@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Creator Lane Migration Assistant",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "One-click migration from SuperProfile (and other comment-to-DM tools) into Creator Lane.",
   "permissions": [
     "tabs",
@@ -25,7 +25,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/superprofile.js-KnOsfEe_.js"
+        "assets/superprofile.js-CTeyrH2Z.js"
       ],
       "matches": [
         "https://*.superprofile.bio/*",
@@ -53,7 +53,7 @@
         "https://superprofile.bio/*"
       ],
       "resources": [
-        "assets/superprofile.js-KnOsfEe_.js"
+        "assets/superprofile.js-CTeyrH2Z.js"
       ],
       "use_dynamic_url": false
     }
